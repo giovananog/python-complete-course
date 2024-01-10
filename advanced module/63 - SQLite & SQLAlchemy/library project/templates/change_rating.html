@@ -1,0 +1,12 @@
+<div>
+    <h1>Book name: {{ book.title }}</h1>
+    <h1>Book rating: {{ book.rating }}</h1>
+
+    <form action="{{ url_for('change', id=book.id ) }}" method="post">
+        <label for="texto">New rating: </label>
+        <input type="text" id="texto" name="texto" required>
+    
+        <input type="submit" value="Enviar">
+    </form>
+
+</div>
